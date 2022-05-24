@@ -1,0 +1,14 @@
+.video-player{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/* .iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 800px!important;
+    height: 400px!important;
+} */

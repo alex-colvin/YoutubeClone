@@ -1,0 +1,12 @@
+summary{
+    font-size: .75rem;
+}
+
+.reply-form{
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    max-width: 90%;
+    margin: auto;
+}

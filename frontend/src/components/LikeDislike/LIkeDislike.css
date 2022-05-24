@@ -1,0 +1,10 @@
+.max-height{
+    max-height: 15px;
+}
+
+.btn-sm {
+    padding: .125rem .35rem !important;
+    font-size: .75rem !important;
+    border-radius: .2rem !important;
+    margin-left: .5rem !important;
+}

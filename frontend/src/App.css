@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid steelblue;
+  color: steelblue;
+  font-size: 1rem;
+  font-family: inherit;
+  max-width: 100px;
+  padding: 0.5rem 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: steelblue;
+}
+
+.comment-heading{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.comment-body{
+	font-size: .8rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.comment{
+  background-color: #82b7d352;
+  }
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: auto;
+  text-align: center;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.bg {
+  background-color: #0777b352
+}
+
+.btn-sm {
+  padding: .125rem .35rem !important;
+  font-size: .75rem !important;
+  border-radius: .2rem !important;
+  margin-left: .5rem !important;
+}
+.likes {
+  font-size: .75rem;
+  margin-left: .5rem;
+}
+
+.replies{
+  margin-left: 1rem;
+}
+.comment-box{
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+}

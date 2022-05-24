@@ -1,0 +1,14 @@
+h6{
+    font-size: small;
+    color: white;
+}
+
+/* img {
+    background-color: steelblue;
+} */
+.card {
+    height: 100%;
+    background-color: steelblue;
+    padding: 0;
+    
+}

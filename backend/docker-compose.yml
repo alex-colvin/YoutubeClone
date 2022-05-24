@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  backend:
+    container_name: backend
+    #image created and pushed to D Hub from Dockerfile
+    image: alexcolvin/ytcbackend:latest
+    ports: 
+    #80 is default entry for AWS-8000 matches Dockerfile
+      - "80:8000"
+    #run entrypoint script
+    command: sh ./entrypoint.sh
+    depends_on:
+      db:
+        condition: service_healthy
+  #same as local_settings HOST name
+  db:
+    container_name: db
+    image: mysql
+    environment:
+      MYSQL_DATABASE: 'youtube_database' #matches local_settings.py
+      MYSQL_ROOT_PASSWORD: 'example' #matches local_settings.py
+    command: --default-authentication-plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD","mysqladmin","ping","-h","localhost"]
+      timeout: 20s
+      retries: 10
+    volumes:
+      - production_db_volume:/var/lib/mysql
+
+volumes:
+  production_db_volume:
